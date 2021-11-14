@@ -2,8 +2,8 @@
 {
     public interface IAuditedEntity
     {
-        public string CreatedBy { get; set; }
+        string CreatedBy { get; set; }
 
-        public string LastModifiedBy { get; set;}
+        string LastModifiedBy { get; set;}
     }
 }

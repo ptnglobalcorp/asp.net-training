@@ -2,8 +2,8 @@
 {
     public interface IBaseEntity
     {
-        public string Id { get; set; }
+        string Id { get; set; }
 
-        public int ClusteredKey { get; set; }
+        int ClusteredKey { get; set; }
     }
 }

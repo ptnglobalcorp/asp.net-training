@@ -2,8 +2,8 @@
 {
     public interface IDateEntity
     {
-        public DateTimeOffset CreatedAt { get; set; }
+        DateTimeOffset CreatedAt { get; set; }
 
-        public DateTimeOffset? LastModifiedAt { get; set; }
+        DateTimeOffset? LastModifiedAt { get; set; }
     }
 }
