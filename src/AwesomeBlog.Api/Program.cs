@@ -1,6 +1,12 @@
+using AwesomeBlog.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
+var dbConnectionString = builder.Configuration.GetConnectionString("Default");
+
 // Add services to the container.
+builder.Services.AddDbContext<AwesomeBlogDbContext>(options => options.UseSqlServer(dbConnectionString));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
