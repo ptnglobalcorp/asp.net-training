@@ -1,4 +1,6 @@
-﻿namespace AwesomeBlog.Core.Entities.Common
+﻿using System;
+
+namespace AwesomeBlog.Core.Entities.Common
 {
     public interface IDateEntity
     {

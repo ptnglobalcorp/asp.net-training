@@ -1,4 +1,5 @@
-﻿using AwesomeBlog.Core.Entities.Common;
+﻿using System.Collections.Generic;
+using AwesomeBlog.Core.Entities.Common;
 
 namespace AwesomeBlog.Core.Entities
 {
