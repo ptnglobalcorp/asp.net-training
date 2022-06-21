@@ -1,4 +1,5 @@
 using AwesomeBlog.Core.Interfaces;
+using AwesomeBlog.Core.Services.Categories;
 using AwesomeBlog.Infrastructure.Persistence;
 using AwesomeBlog.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,7 @@ builder.Services.AddDbContext<AwesomeBlogDbContext>(options => options.UseSqlSer
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSingleton<ICurrentUserService, CurrentUserService>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
+builder.Services.AddScoped<ICategoryAppService, CategoryAppService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
